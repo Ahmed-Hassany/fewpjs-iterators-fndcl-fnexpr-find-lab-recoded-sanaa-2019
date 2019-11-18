@@ -5,7 +5,11 @@ function testFunc() {
 }
 
 function superbowlWin(arr){
-  return arr.find(function(item){
+  found = arr.find(function(item){
     return item.result === "W";
   })
+  if(found)
+  return found.year;
+  else
+  return found;
 }
